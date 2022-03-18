@@ -1,7 +1,7 @@
-# web-231
-Enterprise JavaScript
+# web-231 Enterprise JavaScript 1
+Bellevue University
 
-# WEB 231 Enterprise JavaScript 1
+
 ## Contributors
-* Andres Macias
 * Richard Krasso
+* Andres Macias
