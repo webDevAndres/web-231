@@ -1,4 +1,4 @@
-# web-231 Enterprise JavaScript 1
+# WEB 231 Enterprise JavaScript 1
 Bellevue University
 
 
