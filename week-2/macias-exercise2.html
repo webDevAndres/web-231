@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 231 – Enterprise JavaScript I</title>
+</head>
+<body>
+    <h1>Exercise 2.2 - Hello JavaScript</h1>
+    <button id="btnMyCourse">What course am I taking?</button>
+    <p id="myWorldTxt">txtMyWorld paragraph tag</p>
+    <a href="../index.html" class="return-home">Return</a>
+
+    <script>
+        const myWorldTxtParagraph = document.getElementById("myWorldTxt");
+        myWorldTxtParagraph.innerHTML = "You are in Macias's World!"
+
+        const alertMyCourseButton = document.getElementById("btnMyCourse");
+        alertMyCourseButton.addEventListener("click", alertMyCourse);
+
+        function alertMyCourse() {
+            alert("WEB 231 – Enterprise JavaScript I");
+        }
+    </script>
+</body>
+</html>
