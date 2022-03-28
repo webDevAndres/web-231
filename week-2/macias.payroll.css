@@ -4,6 +4,6 @@
     Date: 03/27/22
     Description: Styling for the macias.payroll.html file for WEB 231 Enterprise JavaScript I.
 **/
-#employeeRecordList {
+.employeeRecordList {
     border: 1px dotted red;
 }
