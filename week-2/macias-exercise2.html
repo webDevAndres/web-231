@@ -22,13 +22,13 @@
 <body>
     <h1>Exercise 2.2 - Hello JavaScript</h1>
     <button id="btnMyCourse">What course am I taking?</button>
-    <p id="myWorldTxt">txtMyWorld paragraph tag</p>
+    <p id="txtMyWorld">txtMyWorld paragraph tag</p>
     <a href="../index.html" class="return-home">Return</a>
 
     <script>
 
         // binds the text "You are in Macias's World!" to the myWorldTxt <p> tag.
-        const myWorldTxtParagraph = document.getElementById("myWorldTxt");
+        const myWorldTxtParagraph = document.getElementById("txtMyWorld");
         myWorldTxtParagraph.innerHTML = "You are in Macias's World!"
         
         // alerts the text Web 231 - Enterprise JavaScript I by clicking the btnMyCourse button.
@@ -36,7 +36,7 @@
         alertMyCourseButton.addEventListener("click", alertMyCourse);
 
         function alertMyCourse() {
-            alert("WEB 231 – Enterprise JavaScript I");
+            alert("WEB 231 – Enterprise JavaScript I.");
         }
     </script>
 </body>
