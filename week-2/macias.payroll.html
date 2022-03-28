@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 231 – Enterprise JavaScript I</title>
+    <!-- google font kit for the course --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="macias.payroll.css">
+</head>
+<body>
+    <h1 id="payroll-header">Payroll System</h1>
+    <h3>Employee record 1</h3>
+    <ul id="employeeRecordList">
+        <li id="txtFirstNameLudwig">Ludwig</li>
+        <li id="txtLastNameBeethoven">Beethoven</li> 
+        <li id="txtAddressLudwig">505 main street</li>
+        <li id="txtHireDateLudwig"></li>
+        <li id="txtPayRateLudwig">18.912</li>
+    </ul>
+    <h3>Employee record 2</h3>
+    <ul id="employeeRecordList">
+        <li id="txtFirstNameJohann">Johann</li>
+        <li id="txtLastNameBach">Bach</li> 
+        <li id="txtAddressJohann">512 main street</li>
+        <li id="txtHireDateJohann">12/9/2020</li>
+        <li id="txtPayRateJohann">25.512</li>
+    </ul>
+    <h3>Employee record 3</h3>
+    <ul id="employeeRecordList">
+        <li id="txtFirstNameWolfgang">Wolfgang</li>
+        <li id="txtLastNameMozart">Mozart</li> 
+        <li id="txtAddressWolfgang">600 main street</li>
+        <li id="txtHireDateWolfgang">12/9/2020</li>
+        <li id="txtPayRateWolfgang">50.132</li>
+    </ul>
+    <a href="../index.html">Return</a>
+
+    <script>
+        const recordOneFirstName = document.getElementById("txtFirstNameLudwig").innerHTML;
+        const recordOneLastName = document.getElementById("txtLastNameBeethoven").innerHTML;
+        const recordOneAddress = document.getElementById("txtAddressLudwig").innerHTML;
+        const recordOneHireDate = document.getElementById("txtHireDateLudwig").innerHTML;
+        let recordOnePayRate = document.getElementById("txtPayRateLudwig").innerHTML;
+
+        recordOnePayRate = parseFloat(recordOnePayRate);
+        document.getElementById("txtPayRateLudwig").innerHTML = recordOnePayRate.toFixed(1);
+
+        let hireDate = new Date(2020, 11, 9);
+        hireDate = hireDate.toLocaleDateString("en-US");
+        document.getElementById("txtHireDateLudwig").innerHTML = hireDate;
+
+        const recordTwoFirstName = document.getElementById("txtFirstNameJohann").innerHTML;
+        const recordTwoLastName = document.getElementById("txtLastNameBach").innerHTML;
+        const recordTwoAddress = document.getElementById("txtAddressJohann").innerHTML;
+        const recordTwoHireDate = document.getElementById("txtHireDateJohann").innerHTML;
+        let recordTwoPayRate = document.getElementById("txtPayRateJohann").innerHTML;
+
+        recordTwoPayRate = parseFloat(recordTwoPayRate);
+        document.getElementById("txtPayRateJohann").innerHTML = recordTwoPayRate.toFixed(1);
+
+        const recordThreeFirstName = document.getElementById("txtFirstNameWolfgang").innerHTML;
+        const recordThreeLastName = document.getElementById("txtLastNameMozart").innerHTML;
+        const recordThreeAddress = document.getElementById("txtAddressWolfgang").innerHTML;
+        const recordThreeHireDate = document.getElementById("txtHireDateWolfgang").innerHTML;
+        let recordThreePayRate = document.getElementById("txtPayRateWolfgang").innerHTML;
+
+        recordThreePayRate = parseFloat(recordThreePayRate);
+        document.getElementById("txtPayRateWolfgang").innerHTML = recordThreePayRate.toFixed(1);
+
+
+
+
+    </script>
+</body>
+</html>
