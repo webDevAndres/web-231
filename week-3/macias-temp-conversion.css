@@ -21,3 +21,8 @@ body {
     width: 600px;
     margin: 3% auto 0;
 }
+
+#conversionResult {
+    font-size: 28px;
+    text-align: center;
+}
