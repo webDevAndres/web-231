@@ -33,7 +33,7 @@
                         <input type="text" class="input" name="Fahrenheit" id="txtFahrenheit">
                     </div>
                     <div class="form-field">
-                        <button class="btn btn-primary full-width">Convert Temperature</button>
+                        <button class="btn btn-primary full-width" id="convertTemp">Convert Temperature</button>
                     </div>
                 </div>
             </div>
@@ -43,12 +43,21 @@
     <div id="form-results">
         <div class="card">
             <div class="card-title">Conversion Results</div>
-            <div class="card-content"></div>
+            <div class="card-content" id="conversionResult"></div>
         </div>
         <a href="../index.html">Return</a>
     </div>
 </div>
 
-   
+   <script>
+
+document.getElementById("convertTemp").onclick = function () {
+    let fahrenheit = document.getElementById("txtFahrenheit").value;
+    fahrenheit = ((parseFloat(fahrenheit - 32) / 1.8).toFixed(2));
+    document.getElementById("conversionResult").innerHTML = fahrenheit;
+}
+    
+       
+   </script>
 </body>
 </html>
