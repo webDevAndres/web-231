@@ -8,6 +8,10 @@
 body {
     font-family: 'Oswald', Verdana, Arial, sans-serif;
 }
+
+.app-header {
+    text-align: center;
+}
 #container {
     padding: 10px;
 }
