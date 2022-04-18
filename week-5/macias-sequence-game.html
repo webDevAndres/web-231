@@ -92,7 +92,7 @@
                 let formattedText = evenNumberText.slice(0, -2);
                 document.getElementById("sequenceResult").innerHTML = formattedText;
             }
-            else {
+            else if (choice == "odd") {
                 let number = 0;
                 let oddNumberText = "";
 
@@ -105,6 +105,9 @@
                 }
                 let formattedText = oddNumberText.slice(0, -2);
                 document.getElementById("sequenceResult").innerHTML = formattedText;
+            }
+            else {
+                alert("Invalid selection, please try again!");
             }
         }
 
