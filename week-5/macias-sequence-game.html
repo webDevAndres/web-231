@@ -67,15 +67,15 @@
                 let num2 = 1;
                 let next = null;
                 let fibonacciSequenceText = "";
-                
+
                 while (next < 40) {
-                   next = num1 + num2;
-                   num1 = num2;
-                   num2 = next;
+                    next = num1 + num2;
+                    num1 = num2;
+                    num2 = next;
                     fibonacciSequenceText += num1 + ", ";
                 }
 
-                let formattedText = fibonacciSequenceText.slice(0,-2);
+                let formattedText = fibonacciSequenceText.slice(0, -2);
                 document.getElementById("sequenceResult").innerHTML = formattedText;
             }
             else if (choice == "even") {
@@ -87,9 +87,9 @@
                     if (number % 2 == 0) {
                         evenNumberText += number + ", ";
                     }
-                   
+
                 } while (number < 19);
-                let formattedText = evenNumberText.slice(0,-2);
+                let formattedText = evenNumberText.slice(0, -2);
                 document.getElementById("sequenceResult").innerHTML = formattedText;
             }
             else {
@@ -98,16 +98,14 @@
 
                 for (let index = 0; number < 20; index++) {
                     number = number + 1;
-                    
+
                     if (number % 2 != 0) {
                         oddNumberText += number + ", ";
                     }
                 }
-                let formattedText = oddNumberText.slice(0,-2);
+                let formattedText = oddNumberText.slice(0, -2);
                 document.getElementById("sequenceResult").innerHTML = formattedText;
             }
-
-        
         }
 
 
