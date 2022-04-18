@@ -1,0 +1,31 @@
+/**
+    Title: macias-sequence-game.css
+    Author: Andres Macias
+    Date: 04/17/22
+    Description: Styling for the macias-sequence-game.html file for WEB 231 Enterprise JavaScript I.
+**/
+
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+.app-header {
+    text-align: center;
+}
+#container {
+    padding: 10px;
+}
+
+#sequence-game-form {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+#form-results {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+#sequenceResult {
+    font-size: 28px;
+    text-align: center;
+}
