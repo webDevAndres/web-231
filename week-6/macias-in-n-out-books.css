@@ -15,17 +15,32 @@ body {
     padding: 10px;
 }
 
-#sequence-game-form {
+#favorite-books-form, #favorite-books, #favorite-authors {
     width: 600px;
     margin: 3% auto 0;
 }
 
-#form-results {
-    width: 600px;
-    margin: 3% auto 0;
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
-#sequenceResult {
-    font-size: 28px;
-    text-align: center;
+table th {
+    text-align: left;
+    background-color: #4F3674;
+    color: white;
+
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
+table tr:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+    cursor: pointer;
 }
