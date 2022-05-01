@@ -1,0 +1,21 @@
+/**
+    Title: macias-javazon.css
+    Author: Andres Macias
+    Date: 05/01/22
+    Description: Styling for the macias-javazon.html file for WEB 231 Enterprise JavaScript I.
+**/
+
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+.app-header {
+    text-align: center;
+}
+#container {
+    padding: 10px;
+}
+
+#javazon-form {
+    width: 600px;
+    margin: 3% auto 0;
+}
