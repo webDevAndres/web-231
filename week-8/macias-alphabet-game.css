@@ -1,0 +1,27 @@
+/**
+    Title: macias-alphabet-game.css
+    Author: Andres Macias
+    Date: 05/08/22
+    Description: Styling for the macias-alphabet-game.html file for WEB 231 Enterprise JavaScript I.
+**/
+
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+.app-header {
+    text-align: center;
+}
+#container {
+    padding: 10px;
+}
+
+#alphabet-game-form, #alphabet-letters, #alphabet-results{
+    width: 600px;
+    margin: 3% auto 0;
+    
+}
+
+#alphabet-letters .card-content, #alphabet-results .card-content {
+    font-size: 28px;
+    text-align: center;
+}
