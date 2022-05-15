@@ -70,11 +70,11 @@
             shuffle = function () {
                 for (let count = 0; count < this.CARD_COUNT; count++) {
                     let secondCard = Math.floor(Math.random() * this.CARD_COUNT);
-                    let firstCard = this.cards[count == 0];
-                    let tempCard = this.cards[firstCard];
+                    let firstCard = this.cards[count];
+                    let tempCard = firstCard;
 
-                    this.cards[count] = secondCard;
-                    this.cards[count] = tempCard;
+                    this.cards[count] = this.cards[secondCard];
+                    this.cards[secondCard] = tempCard;
                 }
 
             }
@@ -104,7 +104,7 @@
 
 
             let cardOutPutWithIcon = "";
-
+            console.log(dealer.cards);
             for (const card of dealer.cards) {
                 switch (card.suit) {
                     case "Hearts":
