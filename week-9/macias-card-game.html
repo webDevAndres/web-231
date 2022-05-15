@@ -56,11 +56,14 @@
         }
 
         class Dealer {
+            // properties of the dealer class
             CARD_COUNT = 52;
             cards = [];
             faces = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
             suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
+            
 
+            // methods of the dealer class
             getDeckOfCards = function () {
                 for (let count = 0; count < this.CARD_COUNT; count++) {
                     this.cards[count] = new Card(this.faces[count % 13], this.suits[Math.floor(count / 13)]);
@@ -73,8 +76,8 @@
                     let firstCard = this.cards[count];
                     let tempCard = firstCard;
 
-                    this.cards[count] = this.cards[secondCard];
-                    this.cards[secondCard] = tempCard;
+                    this.cards[count] = this.cards[secondCard]; //replace current card with second card
+                    this.cards[secondCard] = tempCard; // replace second card with the temp card.
                 }
 
             }
@@ -123,9 +126,6 @@
             }
             document.getElementById("player-card-container").innerHTML = cardOutPutWithIcon;
         }
-
-
-
 
     </script>
 </body>
